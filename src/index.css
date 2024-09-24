@@ -32,6 +32,10 @@
   src: url('./assets/Kajiro\ Bold.ttf');
 }
 
+body {
+  background-color: #111111;
+}
+
 h1,
 button {
   font-family: hel3;

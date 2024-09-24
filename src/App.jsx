@@ -129,7 +129,7 @@ const App = () => {
       </div>
       <div id='main' ref={mainRef} className='overflow-hidden'>
         <div ref={cursorRef} id="cursor" className='w-10 h-10 bg-white rounded-full hidden mix-blend-difference xl:fixed xl:block top-0 z-40 left-0'></div>
-        <div id="pageone" className='w-full relative overflow-hidden min-h-screen bg-[#111111]'>
+        <div id="pageone" className='w-full relative overflow-hidden xl:h-screen h-96 bg-[#111111]'>
           <nav className='w-full px-5  h-14 py-10 text-white flex items-center justify-between'>
             <div>
               <h3 className='text-[2.5vw] sm:text-[2.5vw] md:text-[2.5vw] lg:text-[2.5vw] xl:text-[2vw] 2xl:text-[2.5vw] text-[#fff] font-extrabold'>AbdurRehman</h3>
@@ -138,14 +138,14 @@ const App = () => {
               <button className='text-[2.5vw] sm:text-[2.5vw] md:text-[2.5vw] lg:text-[2.5vw] xl:text-[2vw] 2xl:text-[2.5vw] text-[#fff]'><h3>Download Resume</h3></button>
             </div>
           </nav>
-          <div className='w-full px-5 rounded-3xl  text-white min-h-screen flex items-center justify-center absolute top-8'>
+          <div className='w-full px-5 rounded-3xl h-96 text-white xl:h-screen  flex items-center justify-center absolute top-8'>
             <div className='absolute w-full z-10'>
               <Marquee>
                 <h2 className='text-[5vw] ml-5'>FRONT END DEVELOPER</h2>
                 <h2 className='text-[5vw] ml-5'>FRONT END DEVELOPER</h2>
               </Marquee>
             </div>
-            <img className=' rounded-3xl lg:mt-10 xl:mt-0  z-20 w-[90%] md:w-[70%] lg:w-[45%] xl:w-[70%] object-cover' src="https://i.ibb.co/8gCTyJy/abdurmain.jpg" alt="" />
+            <img className=' rounded-3xl lg:mt-10 xl:mt-0 h-60  z-20 w-[90%] md:w-[70%] lg:w-[45%] xl:w-[70%] xl:h-[70%] object-cover' src="https://i.ibb.co/8gCTyJy/abdurmain.jpg" alt="" />
           </div>
         </div>
         <div id='maintwo' className='bg-[#111111]  w-[600%] flex items-center  text-yellow-200 translate-x-[-30%]  text-[5vw]'>
@@ -159,12 +159,13 @@ const App = () => {
             <h2 className='ml-5'>ABDUR-REHMAN?</h2>
           </div>
         </div>
-        <div id="pagetwo" className='w-full flex-col text-white flex items-start justify-center h-screen bg-[rgb(17,17,17)]'>
+        <div id="pagetwo" className='w-full flex-col text-white flex items-start justify-center xl:h-screen h-56 bg-[rgb(17,17,17)]'>
           <div className='flex w-full items-center justify-center'>
             <h3 className='text-[6vw]'><span className='text-[#38CDFA]'>Projects</span> I have <span className='text-[#FC626A]'>Worked</span> On.</h3>
           </div>
-          <Canvas flat camera={{ fov: 65 }}>
-            <OrbitControls enableZoom={false} />
+          <Canvas flat camera={{ fov: 75 }}>
+            <OrbitControls enableZoom={false}
+              enableRotate={false} />
             <ambientLight />
             <Cyl />
             <EffectComposer>
@@ -175,7 +176,7 @@ const App = () => {
                 luminanceSmoothing={0} />
             </EffectComposer>
           </Canvas>
-          <Marquee className='overflow-hidden'>
+          <Marquee className='overflow-hidden xl:h-96 xl:mb-10'>
             <h2 className='text-[5vw] ml-3 font-extrabold'>LOCOMOTIVE JS</h2>
             <h2 className='text-[5vw] font-extrabold ml-3'>GSAP</h2>
             <h2 className='text-[5vw] font-extrabold ml-3'>HTML</h2>
@@ -185,15 +186,15 @@ const App = () => {
 
           </Marquee>
         </div>
-        <div id="pagethree" className='w-full h-screen bg-[#111111] flex flex-col items-center text-white justify-center'>
-          <h3 ref={pagethreeRef} className='sm:w-[50%] w-full px-5 text-center text-[3.5vw] sm:text-[2vw]'>Aoa <br />
+        <div id="pagethree" className='w-full h-96 xl:h-[90vh] bg-[#111111] flex flex-col items-center text-white justify-center'>
+          <h3 ref={pagethreeRef} className='sm:w-[50%] md:w-[90%] w-full px-5 text-center text-[3.5vw] sm:text-[2vw] md:text-[3vw]'>Aoa <br />
             I'm Abdurrehman, a front-end developer with a passion for web design. I’ve cloned several impressive websites, including TwoGoodCo, Rejoice, and SidcupGolf, focusing on creating visually appealing and responsive layouts. My goal is to enhance user experience through clean, modern designs. If you're looking for a dedicated developer to help bring your ideas to life, let’s connect!
           </h3>
           <div className='flex mt-10 items-center justify-center gap-x-5'>
             <a href="https://www.instagram.com/abdurrehmanonig/" target='_blank'>
-              <button className='px-8 py-3 rounded-full bg-[#58C2F9]'>Say Hi 👋</button>
+              <button className='px-5 py-3 rounded-full bg-[#58C2F9]'>Say Hi 👋</button>
             </a>
-            <a href="https://github.com/abdurwebdev" target='_blank'><button className='flex gap-x-2 items-center px-8 py-3 rounded-full bg-[#FA5A5A]'>Watch My Repo <img src="https://i.pinimg.com/originals/60/5f/9d/605f9d4d4e1bef979969a2e56b6dfbe3.png" className='w-5 h-5 object-cover' alt="" /></button></a>
+            <a href="https://github.com/abdurwebdev" target='_blank'><button className='flex gap-x-2 items-center px-5 py-3 rounded-full bg-[#FA5A5A]'>Watch My Repo <img src="https://i.pinimg.com/originals/60/5f/9d/605f9d4d4e1bef979969a2e56b6dfbe3.png" className='w-5 h-5 object-cover' alt="" /></button></a>
           </div>
         </div>
         <div id="pagefour" className='w-full px-5 pt-10 text-white min-h-screen bg-[#111111]'>
@@ -217,7 +218,7 @@ const App = () => {
             <img className='w-[800px] rounded-2xl h-96 object-cover' src="https://i.ibb.co/hDGZqZn/image.png" alt="" />
           </div>
         </div>
-        <div id="pagefive" className='w-full text-white px-5 pt-10 min-h-screen bg-[#111111]'>
+        <div id="pagefive" className='w-full text-white px-5 pt-10 md:h-[560px] h-96 mb-10 bg-[#111111]'>
           <h3 className='text-[5vw]'>Watch My Websites <span className='text-red-500'>Live</span></h3>
           <div className='mt-10'>
             <a id='twogood' href="https://twogoodco2-0-yo99.vercel.app/" target='_blank' className='flex py-8 border-t border-white border-b w-[100%] px-3 text-[5vw]  items-center justify-between'>
@@ -230,7 +231,7 @@ const App = () => {
             </a>
           </div>
           <div className='mt-5'>
-            <a id='twogood' href="https://twogoodco2-0-yo99.vercel.app/" target='_blank' className='flex py-8 border-t border-white border-b w-[100%] px-3 text-[5vw]  items-center justify-between'>
+            <a id='twogood' href="https://rejoice2-0.vercel.app/" target='_blank' className='flex py-8 border-t border-white border-b w-[100%] px-3 text-[5vw]  items-center justify-between'>
               <div>
                 <h4 className='relative z-50'>REJOICE CLONE</h4>
               </div>
@@ -250,10 +251,10 @@ const App = () => {
             </a>
           </div>
         </div>
-        <div id="pagesix" className='w-full pt-10  bg-[#111111] px-5  text-white'>
+        <div id="pagesix" className='w-full pt-10 xl:pt-28  bg-[#111111] px-5  text-white'>
           <h3 className='text-[8vw] leading-[8vw]'>you can get in touch
             with me via <a href="mailto: iabdurrehman12345@gmail.com"><span className='text-yellow-300'>mail</span></a> or <a href="https://www.instagram.com/abdurrehmanonig/" target='_blank' id='third'><span className='text-pink-400'>instagram</span></a> or <span className='text-blue-500'>linkedIn.</span></h3>
-          <div className='w-full mt-10 pb-5 text-2xl flex items-center justify-center '>
+          <div className='w-full mt-10 pb-5 text-xl flex items-center justify-center '>
             <h3>Crafted with 💓 by me</h3>
           </div>
         </div>
