@@ -240,7 +240,7 @@ const App = () => {
             </a>
           </div>
           <div className='mt-5'>
-            <a id='twogood' href="https://twogoodco2-0-yo99.vercel.app/" target='_blank' className='flex py-8 border-t border-white border-b w-[100%] px-3 text-[5vw]  items-center justify-between'>
+            <a id='twogood' href="https://sidcupfamilygolfs.vercel.app/" target='_blank' className='flex py-8 border-t border-white border-b w-[100%] px-3 text-[5vw]  items-center justify-between'>
               <div>
                 <h4 className='relative z-50'>SIDCUP FAMILY GOLF Clone</h4>
               </div>
