@@ -27,6 +27,11 @@
   src: url('./assets/HelveticaNowDisplay-Bold.ttf');
 }
 
+@font-face {
+  font-family: kajiro;
+  src: url('./assets/Kajiro\ Bold.ttf');
+}
+
 h1,
 button {
   font-family: hel3;
